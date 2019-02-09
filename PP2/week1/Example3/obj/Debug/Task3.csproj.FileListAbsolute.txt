@@ -1,0 +1,13 @@
+C:\Users\PC\source\pp2\week1\Example3\bin\Debug\Example3.exe.config
+C:\Users\PC\source\pp2\week1\Example3\bin\Debug\Example3.exe
+C:\Users\PC\source\pp2\week1\Example3\bin\Debug\Example3.pdb
+C:\Users\PC\source\pp2\week1\Example3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\pp2\week1\Example3\obj\Debug\Example3.exe
+C:\Users\PC\source\pp2\week1\Example3\obj\Debug\Example3.pdb
+C:\Users\PC\source\repos\week1\Example3\bin\Debug\Example3.exe.config
+C:\Users\PC\source\repos\week1\Example3\bin\Debug\Example3.exe
+C:\Users\PC\source\repos\week1\Example3\bin\Debug\Example3.pdb
+C:\Users\PC\source\repos\week1\Example3\obj\Debug\Task3.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\week1\Example3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\week1\Example3\obj\Debug\Example3.exe
+C:\Users\PC\source\repos\week1\Example3\obj\Debug\Example3.pdb
