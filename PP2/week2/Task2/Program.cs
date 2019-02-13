@@ -16,7 +16,7 @@ namespace Example3
 
             string text = sr.ReadToEnd();
 
-            int[] numbers = F(text);
+            int[] numbers = F1(text);
             
             Console.WriteLine(text);
             sr.Close();
@@ -24,20 +24,20 @@ namespace Example3
             FileStream fs2 = new FileStream(@"C:/c#/output.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter sw = new StreamWriter(fs2);
             
-            int[] primeNumbers = F3(numbers);
+            int[] primeNumbers = F2(numbers);
 
-            var y = primeNumbers.Where(x => x % 1 == 0);
-            foreach (var x in y)
+            
+            foreach (var t in primeNumbers)
             {
-                Console.WriteLine(x + " ");
-                sw.Write(x + " ");
+                Console.WriteLine(t + " ");
+                sw.Write(t + " ");
             }
 
             sw.Close();
             fs2.Close();
 
         }
-        private static int[] F(string text)
+        private static int[] F1(string text)
         {
             string[] parts = text.Split();
             int[] res = new int[parts.Length];
@@ -48,7 +48,7 @@ namespace Example3
             return res;
 
         }
-        private static int[] F3(int[] numbers)
+        private static int[] F2(int[] numbers)
         {
             List<int> res = new List<int>();
             int a;
