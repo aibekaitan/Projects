@@ -25,6 +25,7 @@ namespace Example5
                 FileSystemInfo[] arr = ((DirectoryInfo)fsi).GetFileSystemInfos();
                 for (int i = 0; i < arr.Length; ++i)
                 {
+                    Console.WriteLine(arr.Length);
                     PrintInfo(arr[i], k + 3);
                 }
             }

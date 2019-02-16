@@ -1,0 +1,7 @@
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\bin\Debug\Task1UnderstandingCod.exe.config
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\bin\Debug\Task1UnderstandingCod.exe
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\bin\Debug\Task1UnderstandingCod.pdb
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\obj\Debug\Task1UnderstandingCode.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\obj\Debug\Task1UnderstandingCode.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\obj\Debug\Task1UnderstandingCod.exe
+C:\Users\PC\source\repos\PP2\week3\Task1UnderstandingCod\obj\Debug\Task1UnderstandingCod.pdb

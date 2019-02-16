@@ -3,45 +3,66 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 namespace ConsoleApp2
 {
-    class Student
+    public class Student                                                 
     {
-        string Name;
-        string ID;
-        int Year = 1;
-        public Student(string NAME, string ID)
+        public string name;
+        public string id;
+        public int year;
+        public Student(string id, string name, int year)
         {
-            Name = NAME;
-            this.ID = ID;
-        }
-        public void GiveName()
-        {
-          Console.WriteLine(Name);
-        }
-        public void GiveID()
-        {
-            Console.WriteLine(ID);
-        }
-        public void GiveYear()
-        {
-            Console.WriteLine(Year);
-        }
-        public void increase()
-        { 
-                    Year++;
+            this.name = name;
+            this.id = id;
+            this.year = year;
         }
     }
     class Program
     {
+
         static void Main(string[] args)
         {
-            Student Dauren = new Student("Dauren", "18BD110156");
-            Dauren.GiveName();
-            Dauren.GiveID();
-            Dauren.increase();
-            Dauren.GiveYear();
-           
+            Student stud = new Student(" ", " ", 2);
+            stud.id = Console.ReadLine();                               
+            stud.name = Console.ReadLine();                             
+            stud.year = Convert.ToInt32(Console.ReadLine());           
+            Console.WriteLine(stud.id + " " + stud.name + " " + stud.year);
+            ConsoleKeyInfo consoleKeyInfo = Console.ReadKey();
+            bool esc = false;
+            while (!esc)
+            {
+                switch (consoleKeyInfo.Key)
+                {
+                    case ConsoleKey.Escape:
+                        esc = true;
+                        break;
+                    case ConsoleKey.Add:
+                        Console.Write("\r");
+                    if (stud.year < 4)
+                    {
+                        Console.Write("\r");
+                        stud.year++;
+                        Console.Write(stud.year);
+                        Console.Write("\r");
+                        Console.ReadKey();
+                    } 
+                    else
+                    {
+                            Console.Write("\r");
+                            Console.WriteLine(stud.year);
+                            Console.ReadKey();
+                            Console.Write("\r");
+                            esc = true;
+                            
+                    }
+                     break; 
+                    
+
+                }
+
+            }
+
         }
     }
 }

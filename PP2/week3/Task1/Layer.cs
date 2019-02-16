@@ -5,10 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FarManager2
+namespace FarManager3
 {
     class Layer
     {
+        public FileSystemInfo[] Content
+        {
+            get;
+            set;
+        }
         private int selectedItem;
         public int SelectedItem
         {
@@ -18,13 +23,13 @@ namespace FarManager2
             }
             set
             {
-                if (value >= Content.Count)
+                if (value >= Content.Length)
                 {
                     selectedItem = 0;
                 }
                 else if (value < 0)
                 {
-                    selectedItem = Content.Count - 1;
+                    selectedItem = Content.Length - 1;
                 }
                 else
                 {
@@ -33,33 +38,12 @@ namespace FarManager2
             }
         }
 
-        public List<FileSystemInfo> Content
-        {
-            get;
-            set;
-        }
-
-        public void DeleteSelectedItem()
-        {
-            FileSystemInfo fileSystemInfo = Content[selectedItem];
-            if (fileSystemInfo.GetType() == typeof(DirectoryInfo))
-            {
-                Directory.Delete(fileSystemInfo.FullName, true);
-            }
-            else
-            {
-                File.Delete(fileSystemInfo.FullName);
-            }
-            Content.RemoveAt(selectedItem);
-            selectedItem--;
-        }
-
         public void Draw()
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.Clear();
 
-            for (int i = 0; i < Content.Count; ++i)
+            for (int i = 0; i < Content.Length; ++i)
             {
                 if (i == SelectedItem)
                 {
