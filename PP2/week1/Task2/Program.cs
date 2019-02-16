@@ -38,17 +38,22 @@ namespace ConsoleApp2
                         esc = true;
                         break;
                     case ConsoleKey.Add:
+                        Console.Clear();
                         Console.Write("\r");
                     if (stud.year < 4)
                     {
                         Console.Write("\r");
                         stud.year++;
+                            Console.WriteLine(stud.id);
+                            Console.WriteLine(stud.name);
                         Console.Write(stud.year);
                         Console.Write("\r");
                         Console.ReadKey();
                     } 
                     else
                     {
+                            Console.WriteLine(stud.id);
+                            Console.WriteLine(stud.name);
                             Console.Write("\r");
                             Console.WriteLine(stud.year);
                             Console.ReadKey();
